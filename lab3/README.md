@@ -14,8 +14,8 @@ mappages()是有用的工具
 确保在freeproc()中释放该内存页
 
 ### 实现：
-1.在proc.h struct proc中添加struct usyscall指针字段
-2.在proc.c proc_pagetable()中添加usyscall物理地址到虚拟地址的映射
-3.同样，建立映射后还需要有对应的位置解除映射（在free_pagetable()中）
-4.在allocproc()中开辟空间并初始化
-5.在freeproc()中释放内存页
+1.在proc.h struct proc中添加struct usyscall指针字段  
+2.在proc.c proc_pagetable()中添加usyscall物理地址到虚拟地址的映射  
+3.同样，建立映射后还需要有对应的位置解除映射（在free_pagetable()中）  
+4.在allocproc()中开辟空间并初始化  
+5.在freeproc()中释放内存页  
